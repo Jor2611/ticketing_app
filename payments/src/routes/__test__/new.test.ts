@@ -59,7 +59,7 @@ it('returns a 400 when purchasing a cancelled order', async () => {
       token: 'sadasdsad',
       orderId: order.id,
     })
-    .expect(401);
+    .expect(400);
 });
 
 // it('returns a 201 with valid inputs', async () => {
