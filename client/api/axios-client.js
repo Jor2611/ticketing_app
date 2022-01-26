@@ -4,7 +4,7 @@ const axiosClient = ({ req }) => {
   if(typeof window === 'undefined'){
     return axios.create({
       // baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
-      baseURL: 'http://onemandev.xyz/',
+      baseURL: 'http://www.onemandev.xyz/',
       headers: req.headers
     });
   } else {
